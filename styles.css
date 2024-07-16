@@ -1,0 +1,39 @@
+/* 
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+  } */
+  body {
+    background-color: floralwhite;
+  }
+
+  section.truth {
+    display: flex;
+    /* height: auto; */
+    /* font-size: 0.75rem; */
+    flex-direction: column;
+    background-color: #fff8e9;
+    border-radius: 87px;
+    box-shadow: 3px 0px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* section.truth {
+     display: flex; 
+     justify-content: center; 
+     box-shadow: 3px 0px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+} */
+
+
+table {
+    border-collapse: collapse; /*Можно убрать будут ячейки отдельный + добавить тени */
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 5px;
+  }
