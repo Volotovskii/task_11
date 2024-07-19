@@ -30,6 +30,7 @@
                     <?php
                     for ($a = 0; $a <= 1; $a++) {
                         for ($b = 0; $b <= 1; $b++) {
+                            echo "<tr>";
                             echo "<td>$a</td>";
                             echo "<td>$b</td>";
                             echo "<td>" . intval(!$a) . "</td>";
@@ -70,7 +71,7 @@
 
                     foreach ($values as $x) {
                         echo "<tr>";
-
+                        // первое значение (заголовки первого столбца)
                         if (is_bool($x)) {
                             echo "<td>" . ($x ? "<b>true</b>" : "<b>false</b>") . "</td>";
                         } elseif (is_null($x)) {
@@ -80,9 +81,9 @@
                         } else {
                             echo "<td>" . "<b>" . strval($x) . "</b>" . "</td>";
                         }
-
+                        // все остальные - сравенение гибкое 
                         foreach ($values as $y) {
-                            echo ($x == $y ? '<td style="background-color: #79b367;"><b>true</b></td>' : '<td><b>false</b></td>');
+                            echo ($x == $y ? '<td style="background-color: #79b367;">true</td>' : '<td>false</td>');
                         }
                         echo "</tr>";
                     }
@@ -115,7 +116,7 @@
 
                     foreach ($values as $x) {
                         echo "<tr>";
-
+                        // первое значение (заголовки первого столбца)
                         if (is_bool($x)) {
                             echo "<td>" . ($x ? "<b>true</b>" : "<b>false</b>") . "</td>";
                         } elseif (is_null($x)) {
@@ -125,10 +126,10 @@
                         } else {
                             echo "<td>" . "<b>" . strval($x) . "</b>" . "</td>";
                         }
-
+                        // все остальные - сравенение Жесткое 
                         foreach ($values as $y) {
                             //  echo "<td>" . ($x === $y ? "true" : "false") . "</td>";
-                            echo ($x === $y ? '<td style="background-color: #79b367;"><b>true</b></td>' : '<td><b>false</b></td>');
+                            echo ($x === $y ? '<td style="background-color: #79b367;">true</td>' : '<td>false</td>');
                         }
                         echo "</tr>";
                     }
