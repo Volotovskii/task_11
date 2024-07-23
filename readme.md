@@ -5,11 +5,16 @@
 
 ## Используемые технологии
 
-* HTML
+* HTML;
 
-* CSS 
+* CSS;
 
-* php
+* php.
 
 
 ## Как открыть/запустить
+Если используете VS code:
+* Установить php ( и воможно придётся прописать путь в settings.json до php.exe ("php.validate.executablePath": "./php.exe") );
+* Установить PHP Server:
+1) В init.php справа сверху нажать PHP server;
+2) В init.php нажать правой кнопкой мишы в тексте и запустить php сервер.
